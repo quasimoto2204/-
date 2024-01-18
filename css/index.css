@@ -39,6 +39,25 @@ body{
         /* https://developer.mozilla.org/ja/docs/Web/CSS/background */
     overflow: hidden;
 }
+.icon {
+    opacity: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.icon.animated {
+    animation: fadeIn 0.5s ease-in-out;
+    opacity: 1; 
+}
+
+
+
+
 
 header, footer, h1, h2, h3, p, div, .container01, .filler01 {
     margin: 0.2em 0em 0em 0em;
