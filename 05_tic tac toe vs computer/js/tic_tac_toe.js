@@ -271,7 +271,7 @@ function bearTurn() {
 
 
 function isReach(status) {
-    let penTurnEnd = "0";
+    let bearTurnEnd = "0";
 
     lineArray.some(function (line) {
         let penCheckCnt = 0;
@@ -287,14 +287,14 @@ function isReach(status) {
         });
 
         if (status === "bear" && bearCheckCnt === 2 && penCheckCnt === 0) {
-            penTurnEnd = "1";
+            bearTurnEnd = "1";
         }
 
         if (status === "penguins" && bearCheckCnt === 0 && penCheckCnt === 2) {
-            penTurnEnd = "1";
+            bearTurnEnd = "1";
         }
 
-        if (penTurnEnd === "1") {
+        if (bearTurnEnd === "1") {
             const clickableSquare = line.find(square => square.classList.contains("js-clickable"));
             if (clickableSquare) {
                 isSelect(clickableSquare);
@@ -303,6 +303,5 @@ function isReach(status) {
         }
     });
 
-    return penTurnEnd;
+    return bearTurnEnd;
 }
-
