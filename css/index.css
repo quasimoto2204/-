@@ -193,6 +193,7 @@ footer> p {
     body {
         background-position: 75% 0;
         background-size: auto 812px;
+        background-repeat: no-repeat;
     }
 
 }
