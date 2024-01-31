@@ -370,7 +370,7 @@ function bearTurn() {
 
 
 function isReach(status) {
-    let penTurnEnd = "0";
+    let bearTurnEnd = "0";
 
     lineArray.some(function (line) {
         let penCheckCnt = 0;
@@ -393,7 +393,7 @@ function isReach(status) {
             penTurnEnd = "1";
         }
 
-        if (penTurnEnd === "1") {
+        if (bearTurnEnd === "1") {
             const clickableSquare = line.find(square => square.classList.contains("js-clickable"));
             if (clickableSquare) {
                 isSelect(clickableSquare);
@@ -402,6 +402,6 @@ function isReach(status) {
         }
     });
 
-    return penTurnEnd;
+    return bearTurnEnd;
 }
 
