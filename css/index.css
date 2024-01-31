@@ -188,8 +188,11 @@ footer> p {
 /* https://www.design-memo.com/coding/css-media-queries */
 /* mobileのときのスタイル */
 /*******************************************************/
-@media screen and (max-width: 480px) {
-    body{
+
+@media screen and(max-width:480px) {
+    body {
+        background-position: 75% 0;
         background-size: auto 812px;
     }
+
 }
