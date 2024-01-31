@@ -189,11 +189,13 @@ footer> p {
 /* mobileのときのスタイル */
 /*******************************************************/
 
-@media screen and(max-width:480px) {
+@media screen and (max-width: 480px) {
     body {
         background-position: 75% 0;
         background-size: auto 812px;
         background-repeat: no-repeat;
     }
+}
+
 
 }
